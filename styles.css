@@ -1,0 +1,21 @@
+* {
+    display: flexbox;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+hr {
+    border-top: 1.5px solid green;
+}
+.button {
+    text-decoration: solid;
+    border: 2.5px solid green;
+    cursor: grab;
+    transition: transform 0.1s;
+}
+.button:active {
+    transform: scale(0.95);
+}
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+}
