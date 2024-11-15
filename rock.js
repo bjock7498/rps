@@ -21,7 +21,7 @@ function shoot(choice) {
         message = `Tie! You both pulled ${(choice)}`;
     }
     else {
-        message = `You lost :( ${(choice)} beats ${(computerChoice)}`
+        message = `You lost :( ${(computerChoice)} beats ${(choice)}`
     }
     document.getElementById('result').innerHTML = `
     <p>${message}</
