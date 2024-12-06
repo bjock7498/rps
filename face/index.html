@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>W
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Color Changer</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Button Color Changer</h1>
+  <div class="button-container" id="buttonContainer"></div>
+
+  <label for="colorSelect">Choose a color:</label>
+  <select id="colorSelect">
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+    <option value="random">Random</option>
+    <option value="reset">Reset</option>
+  </select>
+
+  <button onclick="changeColors()">Apply</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
