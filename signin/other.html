@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List Manager</title>
+    <style>
+        .purchased {
+            text-decoration: line-through;
+        }
+
+        li {
+            cursor: grab; /* Apply grab cursor on hover */
+        }
+
+        li:active {
+            cursor: grabbing; /* Apply grabbing cursor when the item is clicked and being dragged */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Grocery List Manager</h2>
+
+<!-- Add Item Section -->
+<input type="text" id="new-item" placeholder="Enter grocery item" />
+<button onclick="addItem()">Add Item</button>
+
+<!-- View All Items Section -->
+<h3>All Items</h3>
+<ul id="grocery-list"></ul>
+
+<!-- View Unpurchased Items Section -->
+<h3>Unpurchased Items</h3>
+<ul id="unpurchased-list"></ul>
+
+<!-- View Purchased Items Section -->
+<h3>Purchased Items</h3>
+<ul id="purchased-list"></ul>
+
+<!-- Move script tag to the end of the body -->
+<script src="other.js"></script>
+</body>
+</html>

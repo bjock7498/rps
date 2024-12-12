@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Summit 2024</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #e9f0f7;
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+        }
+
+        header {
+            grid-column: span 2;
+            background: #1e3a8a;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .main-heading {
+            grid-column: span 2;
+            background: white;
+            padding: 20px;
+            border-left: 5px solid #1e3a8a;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background: white;
+            padding: 20px;
+        }
+
+        .card {
+            background: #f0f8ff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .aside {
+            background: #1e3a8a;
+            color: white;
+            padding: 20px;
+        }
+
+        footer {
+            grid-column: span 2;
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tech Summit 2024</h1>
+            <nav>
+                <a href="#">About</a>
+                <a href="#">Agenda</a>
+                <a href="#">Speakers</a>
+            </nav>
+        </header>
+        <div class="main-heading">
+            <h2>Welcome to Tech Summit 2024</h2>
+            <p>Join industry leaders and technology enthusiasts for three days of networking, learning, and innovation.</p>
+            <p>Explore cutting-edge trends in AI, Web Development, Cloud Computing, and more.</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Keynote Speakers</h3>
+                <p>Hear from top innovators and thought leaders shaping the future of technology.</p>
+            </div>
+            <div class="card">
+                <h3>Workshops</h3>
+                <p>Participate in hands-on sessions to sharpen your skills and learn new technologies.</p>
+            </div>
+            <div class="card">
+                <h3>Networking</h3>
+                <p>Connect with peers, mentors, and potential collaborators from around the globe.</p>
+            </div>
+            <div class="card">
+                <h3>Exhibits</h3>
+                <p>Discover the latest products and solutions from top tech companies.</p>
+            </div>
+            <div class="card">
+                <h3>Panel Discussions</h3>
+                <p>Engage with experts on pressing topics like cybersecurity and AI ethics.</p>
+            </div>
+        </div>
+        <div class="aside">
+            <p>Don't miss your chance to be part of the most anticipated tech event of the year!</p>
+        </div>
+        <footer>
+            <p>&copy; 2024 Tech Summit | All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>

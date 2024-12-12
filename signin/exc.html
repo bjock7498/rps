@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout - Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header {
+            flex: 1 100%;
+            background: #00aaff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .hero {
+            flex: 1 100%;
+            background: #ff4433;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .content {
+            flex: 2;
+            background: #33aa33;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #8833aa;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer {
+            flex: 1 100%;
+            background: #555;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex: 1 100%;
+            }
+
+            .sidebar {
+                flex: 1 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header, footer {
+                padding: 0.5rem;
+            }
+
+            .hero {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <div class="hero">
+            <h2>Hero</h2>
+        </div>
+        <div class="content">
+            <h2>Content</h2>
+        </div>
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+        </div>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+</html>
